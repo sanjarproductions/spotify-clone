@@ -1,0 +1,36 @@
+// .sidebarFriends-wrapper{
+//     background: #000;
+//     max-width: 350px;
+//     color: #fff;
+//     padding: 0px 20px;
+//     padding-top: 30px;
+//     height: 20px;
+// }
+.addFriend{
+    max-width: 346px;
+    width: 100%;
+}
+.addFriend {
+    background: #000;
+    color: #fff;
+
+    .icons {
+        svg {
+            color: #B3B3B3;
+        }
+    }
+}
+
+.addFriend {
+    padding: 0px 20px;
+    padding-top: 30px;
+    b {
+        font-weight: 700 ;
+        font-size: 20px ;
+        color: #CCC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
