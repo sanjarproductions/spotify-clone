@@ -6,8 +6,25 @@ import LikedSongs from "../../img/LikedSongs.svg"
 import LibraryIcon from "../../img/library.svg"
 import CreatePlaylist from "../../img/createPlaylist.svg"
 import Container from '../../utils/Utils'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
+  const TOKEN = localStorage.getItem("token")
+  const [sidebarData, setSidebarData] = useState([])
+
+  useEffect(() => {
+    fetch("https://api.spotify.com/v1/browse/featured-playlists", {
+      headers: {
+        "Authorization": TOKEN,
+        "Content-Type": "application/json"
+      }
+    })
+      .then(response => response.json())
+      .then(data => setSidebarData(data))
+  },[])
+
+  // console.log(sidebarData);
   return (
     <div className='sidebar-wrapper'>
       <Container>
@@ -19,11 +36,13 @@ const Sidebar = () => {
           <li> <img src={LikedSongs} alt="" /> Liked Songs</li>
         </ul>
 
-        {/* <ul className='minor'>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> */}
+        <ul className='minor'>
+          {
+            sidebarData?.playlists?.items.map(links => 
+              <Link key={links.id} to={`/mixes/${links.id}`}>{links.name}</Link>
+            )
+          }
+        </ul>
 
       </Container>
     </div>

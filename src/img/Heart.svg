@@ -1,0 +1,29 @@
+<svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="38" fill="#E5E5E5"/>
+<g id="PLAYLIST" clip-path="url(#clip0_101_4)">
+<rect width="1728" height="1876" transform="translate(-465 -484)" fill="#999999"/>
+<g id="BG Color">
+<rect id="Linear" x="-465" y="-484" width="1728" height="987.601" fill="url(#paint0_linear_101_4)"/>
+</g>
+<g id="BG Color_2" opacity="0.3">
+<rect id="Solid" x="-465" y="-48" width="1728" height="2533" fill="#121212"/>
+</g>
+<g id="Group 11">
+<g id="Heart_XS" clip-path="url(#clip1_101_4)">
+<path id="Vector" d="M20.0023 4.92368L19.1506 4.13203C15.0545 0.324672 8.76864 0.459139 4.82604 4.54499C0.876819 8.64173 0.728597 15.2093 4.39108 19.4886L19.9978 35.6979L35.6083 19.4885C39.2702 15.2099 39.1251 8.65391 35.1727 4.54439L20.0023 4.92368ZM20.0023 4.92368L20.8533 4.13137M20.0023 4.92368L20.8533 4.13137M20.8533 4.13137C24.9367 0.32997 31.2348 0.454438 35.1723 4.544L20.8533 4.13137Z" stroke="white" stroke-width="2.5"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_101_4" x1="399" y1="-433.767" x2="399" y2="-56.5387" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DEF628"/>
+<stop offset="1" stop-color="#121212"/>
+</linearGradient>
+<clipPath id="clip0_101_4">
+<rect width="1728" height="1876" fill="white" transform="translate(-465 -484)"/>
+</clipPath>
+<clipPath id="clip1_101_4">
+<rect width="52" height="52" fill="white" transform="translate(-6 -8)"/>
+</clipPath>
+</defs>
+</svg>

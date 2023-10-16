@@ -1,15 +1,9 @@
-// .sidebarFriends-wrapper{
-//     background: #000;
-//     max-width: 350px;
-//     color: #fff;
-//     padding: 0px 20px;
-//     padding-top: 30px;
-//     height: 20px;
-// }
-.addFriend{
-    max-width: 346px;
-    width: 100%;
+
+.addFriend {
+    width: 346px;
+    // width: 100%;
 }
+
 .addFriend {
     background: #000;
     color: #fff;
@@ -24,13 +18,40 @@
 .addFriend {
     padding: 0px 20px;
     padding-top: 30px;
-    b {
-        font-weight: 700 ;
-        font-size: 20px ;
-        color: #CCC;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 40px;
+}
+
+.saidebarFriends-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    svg{
+        font-size: 32px;
+
     }
+}
+
+.saidebarFriends-desc{
+    color: #CCC;
+    font-size: 18px;
+    margin-bottom: 23px;
+}
+
+.user-photo{
+    margin-bottom: 20px;
+}
+
+.settings-btn{
+    letter-spacing: 2px;
+    padding: 20px 64px;
+    border-radius: 40px;
+    color: #171717;
+    background: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
 }
