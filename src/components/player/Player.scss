@@ -1,0 +1,42 @@
+.main-player-wrapper {
+    background: #181818;
+    height: 112px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.player-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+    height: 100%;
+}
+
+.play-pause {
+    .play-icon {
+        
+        &:hover{
+            transform: scale(1.111);
+        }
+
+        color: #fff;
+        width: 48px;
+        height: 48px;
+    }
+
+    .pause-icon {
+        
+        &:hover{
+            transform: scale(1.111);
+        }
+
+        display: none;
+        color: #fff;
+        width: 48px;
+        height: 48px;
+    }
+}

@@ -2,7 +2,9 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './routes/home/Home';
 import Playlist from './routes/playlist/Playlist';
+import LikedSongs from './routes/LikedSongs/LikedSongs';
 import { useState,useEffect } from 'react';
+import Player from './components/player/Player';
 
 function App() {
   const [data, setData] = useState([])
@@ -29,9 +31,11 @@ function App() {
 
   return (
     <>
+    <Player/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/mixes/:id' element={<Playlist />} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/mixes/:id' element={<Playlist/>} />
+        <Route path='/liked-songs' element={<LikedSongs/>} />
       </Routes>
     </>
   );

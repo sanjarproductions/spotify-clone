@@ -29,11 +29,11 @@ const Sidebar = () => {
     <div className='sidebar-wrapper'>
       <Container>
         <ul className='major'>
-          <li> <img src={HomeIcon} alt="" /> Home</li>
-          <li> <img src={SearchIcon} alt="" /> Search</li>
-          <li> <img src={LibraryIcon} alt="" /> Your Library</li>
-          <li> <img src={CreatePlaylist} alt="" /> Create Playlist</li>
-          <li> <img src={LikedSongs} alt="" /> Liked Songs</li>
+          <Link to={"/"} className='li'> <img src={HomeIcon} alt="" /> Home</Link>
+          <li className='li'> <img src={SearchIcon} alt="" /> Search</li>
+          <li className='li'> <img src={LibraryIcon} alt="" /> Your Library</li>
+          <li className='li'> <img src={CreatePlaylist} alt="" /> Create Playlist</li>
+          <Link to={"/liked-songs"} className='li'> <img src={LikedSongs} alt="" /> Liked Songs</Link>
         </ul>
 
         <ul className='minor'>

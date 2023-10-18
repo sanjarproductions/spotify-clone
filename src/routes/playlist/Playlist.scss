@@ -1,3 +1,7 @@
+.playlist__body {
+    background: #121212;
+}
+
 .main-playlistPg-flex {
     display: flex;
 
@@ -132,6 +136,7 @@
             color: #fff;
             font-size: 20px;
             font-weight: 400;
+            cursor: pointer;
         }
 
         p {
@@ -144,15 +149,100 @@
         width: 52px;
         height: 52px;
         margin-right: 21px;
+        cursor: pointer;
     }
 }
 
 .heart-single__song {
+    margin-left: 54px;
     margin-right: 34px;
     opacity: 0.5;
     font-size: 19px;
+    cursor: pointer;
 }
 
 .album__name {
     flex: 1;
+}
+
+.audioPlayer {
+    display: none;
+}
+
+.track__length {
+    width: 42px;
+}
+
+
+
+
+// Playing Animation ///////////
+
+
+
+.animation {
+    position: relative;
+    display: none;
+}
+
+.animation span {
+    width: 5px;
+    height: 5px;
+    bottom: 0px;
+    position: absolute;
+    background: #1ed760;
+    animation: bodong 0.5s infinite ease;
+}
+
+.animation span:first-child {
+    left: 0px;
+    animation-delay: .3s;
+}
+
+.animation span:nth-child(2) {
+    left: 7px;
+    animation-delay: .4s;
+
+}
+
+.animation span:nth-child(3) {
+    left: 14px;
+    animation-delay: .6s;
+}
+
+.animation span:nth-child(4) {
+    left: 21px;
+    animation-delay: .8s;
+}
+
+.animation span:nth-child(5) {
+    left: 28px;
+    animation-delay: 1s;
+}
+
+@keyframes bodong {
+    0% {
+        height: 5px;
+        background: #1ed760;
+    }
+
+    30% {
+        height: 15px;
+        background: #1ed760;
+    }
+
+    60% {
+        height: 20px;
+        background: #1ed760;
+    }
+
+    80% {
+        height: 15px;
+        background: #1ed760;
+    }
+
+    100% {
+        height: 5px;
+        background: #1ed760;
+    }
 }

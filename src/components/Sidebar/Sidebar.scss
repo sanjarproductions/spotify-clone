@@ -1,7 +1,7 @@
 .sidebar-wrapper {
     background: #000;
     max-width: 310px;
-    min-width: 300px;
+    min-width: 270px;
     width: 100%;
     color: #fff;
 }
@@ -18,12 +18,15 @@ ol {
 
 .major {
     padding-top: 70px;
-    padding-left: 30px;
+    padding-left: 25px;
+    a{
+        color: #fff;
+    }
 }
 
 .minor {
     padding-top: 20px;
-    padding-left: 30px;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -37,7 +40,7 @@ ol {
 }
 
 ul {
-    li {
+    .li {
         display: flex;
         align-items: center;
         gap: 20px;
